@@ -33,6 +33,12 @@ export const useRegister = () => {
             localStorage.setItem('current_user', JSON.stringify(existUser))
             dispatch(Authenticate('yes'))
             navigate('/')
+        }else{
+            users.push(data)
+            localStorage.setItem('users', JSON.stringify(users))
+            localStorage.setItem('current_user', JSON.stringify(data))
+            dispatch(Authenticate('yes'))
+            navigate('/')
         }
 
     }

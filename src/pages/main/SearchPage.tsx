@@ -45,7 +45,7 @@ export const SearchPage = () => {
                                     key={index}
                                 />
                             ))
-                            : 'Buscar'
+                            : <p className="text-xl" >Para realizar una busqueda, ingrese el nombre del pokemon que desea buscar</p>
 
                     }
                 </div>
